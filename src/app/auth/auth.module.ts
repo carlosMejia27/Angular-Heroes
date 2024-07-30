@@ -5,6 +5,7 @@ import { AuthRoutingModule } from './auth-routing.module';
 import { LayoutPagesComponent } from './pages/layout-pages/layout-pages.component';
 import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { RegisterPagesComponent } from './pages/register-pages/register-pages.component';
+import { MaterialModule } from '../material/material.module';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,6 @@ import { RegisterPagesComponent } from './pages/register-pages/register-pages.co
     LoginPageComponent,
     RegisterPagesComponent,
   ],
-  imports: [CommonModule, AuthRoutingModule],
+  imports: [CommonModule, AuthRoutingModule, MaterialModule],
 })
 export class AuthModule {}
